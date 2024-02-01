@@ -2,7 +2,7 @@
 
 * Студент: [Светлана Зоткина](https://up.htmlacademy.ru/htmlcss/39/user/603191).
 * Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
-
+* Сайт: [Проект Седона](https://svetlanafrontend.github.io/603191-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
