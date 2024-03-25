@@ -1327,3 +1327,243 @@ body {
   color: #000000;
   background-color: transparent;
 }
+
+
+
+
+.modals {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.modals-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  display: block;
+  border-radius: 30px;
+  padding: 64px 70px;
+  width: 717px;
+  background-color: #fff;
+}
+
+.modal-content {
+  display: block;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.modal-title {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.modal-close {
+  display: block;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  background-image: url('../images/close.svg');
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: block;
+}
+
+.modal-row {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 137px;
+  padding-right: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.modal-box {
+  display: block;
+  flex-grow: 1;
+  position: relative;
+}
+
+.modal-date-from  {
+  display: block;
+}
+
+.modal-input {
+  display: block;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 100%;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.modal-input-count {
+  text-align: center;
+}
+
+.modal-icon {
+  display: block;
+}
+
+.modal-info {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  position: absolute;
+  left: 20px;
+  bottom: -25px;
+  color: #333333;
+}
+
+.modal-error {
+  color: #FF5757;
+}
+
+.modal-cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-col {
+  display: block;
+  width: 245px;
+}
+
+.modal-button  {
+  display: block;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+}
+
+.modal-minus {
+  display: block;
+  left: 0;
+  background-image: url('../images/minus.svg');
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.modal-plus {
+  display: block;
+  right: 0;
+  background-image: url('../images/plus.svg');
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.modal-submit {
+  width: 100%;
+}
+
+.modal-help {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83B3D3;
+  background-image: url('../images/i.svg');
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  margin-left: 10px;
+}
+
+.popover {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -53px;
+  background-color: #333333;
+  border-radius: 10px;
+  width: 256px;
+  box-shadow: 0 15px 30px 0 rgba(51, 51, 51, 0.3);
+  padding: 15px 18px 18px 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: white;
+  text-align: left;
+  z-index: 5;
+  text-transform: none;
+
+}
+
+
+.popover::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 9px;
+  background-image: url('../images/popover.svg');
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-14px);
+}
