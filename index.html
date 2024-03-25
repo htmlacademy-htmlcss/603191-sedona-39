@@ -221,9 +221,80 @@
       </div>
       <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy">
         <img class="logo-htmlacademy-link" src="images/academy_logo.svg" alt="Логотип «htmlacademy»">
-      </div>
+      </a>
     </div>
   </footer>
+</div>
+
+<div class="modals">
+  <div class="modals-wrapper">
+    <div class="modal">
+      <div class="modal-content">
+         <header class="modal-header">
+          <b class="modal-title">
+            Поиск гостиницы в Седоне
+          </b>
+          <button class="modal-close"></button>
+        </header>
+      </div>
+      <form action="/" method="post" class="modal-form">
+        <div class="modal-row">
+          <div class="modal-field">
+            <label class="modal-label">Дата заезда:</label>
+            <div class="modal-box">
+              <input type="text" value="27 апреля 2020" name="date-from" id="modal-date-from" class="modal-input">
+              <div class="modal-icon"></div>
+              <span class="modal-info modal-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-row">
+          <div class="modal-field">
+            <label class="modal-label">Дата выезда:</label>
+            <div class="modal-box">
+              <input type="text"  value="1 сентября 2023" name="date-to" id="modal-date-to" class="modal-input">
+              <div class="modal-icon"></div>
+              <span class="modal-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-row">
+          <div class="modal-cols">
+            <div class="modal-col">
+              <div class="modal-field">
+                <label class="modal-label">Взрослые:</label>
+                <div class="modal-box">
+                  <button type="button" class="modal-button modal-minus"></button>
+                  <input type="text" value="2" name="date-from" id="modal-date-from" class="modal-input modal-input-count">
+                  <button type="button" class="modal-button modal-plus"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-col">
+              <div class="modal-field">
+                <label class="modal-label">
+                  Дети:
+                  <button class="modal-help"></button>
+                  <div class="popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                </label>
+                <div class="modal-box">
+                  <button type="button" class="modal-button modal-minus"></button>
+                  <input type="text" value="2" name="date-from" id="modal-date-from" class="modal-input modal-input-count">
+                  <button type="button" class="modal-button modal-plus"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="modal-submit button button-blue button-big">Найти</button>
+      </form>
+
+    </div>
+  </div>
 </div>
 </body>
 
