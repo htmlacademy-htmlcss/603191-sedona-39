@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link type="Image/x-icon" href="favicon.ico" rel="icon">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -70,7 +71,7 @@
               </li>
             </ul>
           </header>
-          <form method="POST" action="/" class="form-inner">
+          <form method="GET" action="/" class="form-inner">
             <!-- чекбоксы -->
             <div class="form-column form-infrastructure">
               <b class="form-subtitle">Инфраструктура:</b>
@@ -154,9 +155,7 @@
               <div class="form-buttons">
                 <button class="form-button form-submit button button-blue" type="submit">Применить</button>
                 <button class="form-button form-reset button button-transparent" type="reset">Сбросить</button>
-                <!-- Применение должно отправлять форму а сброс сбрасывать у нас не работает -->
-                <!-- Форма отправляется методом гет а не пост -->
-                <!-- Возможность скопировать результаты выдачи из поисковой строки -->
+
               </div>
             </div>
           </form>
@@ -170,11 +169,11 @@
             <b class="result-title">Найдено гостиниц: 38</b>
             <div class="result-select">Сначала дешевые</div>
             <div class="result-togglers">
-              <button type="button" class="result-toggler result-toggler-network result-toggler-active" alt="Отображение сеткой">
+              <button type="button" class="result-toggler result-toggler-network result-toggler-active">
               </button>
-              <button class="result-toggler result-toggler-cards" alt="Отображение карточками">
+              <button class="result-toggler result-toggler-cards">
               </button>
-              <button class="result-toggler result-toggler-list"  alt="Отображение списком">
+              <button class="result-toggler result-toggler-list">
               </button>
             </div>
           </header>
@@ -182,9 +181,8 @@
             <ul class="cards-list">
               <li class="cards-item">
                 <div class="card">
-                  <!-- Ссылка с названия и с Подробнее вероятно ведут на одну и ту же страницу, или с картинки и тд, задать таб-индекс -1 чтобы табом с клавиатуры не были лишние нажатия -->
-                  <!-- И картинка и заголовок ссылками чтобы картинка открывалась? а название отеля видимо могло открыть о нём страницу с инфой -->
-                  <img src="images/hotel-1.jpg" alt="Звёздное небо проглядывает через ращелину в скалах class="card-image">
+
+                  <img width="300" height="212" src="images/hotel-1.jpg" alt="Звёздное небо проглядывает через ращелину в скалах" class="card-image">
                   <div class="card-info">
                     <div class="card-name">Amara Resort & Spa</div>
                     <div class="card-description">
@@ -195,9 +193,7 @@
                       <a href="#" class="card-button card-more button">Подробнее</a>
                       <button type="button" class="card-button card-favorites button">В избранное</button>
                     </div>
-                    <!-- Параграф, текст который отвечает за 4 звезды и скрытый текст "4 звезды"  -->
-                    <!-- Один класс общий что это звёзды а потом класс который отвечает за их кол-во -->
-                    <!-- Количесство звёзд не должно быть списком типа характеристика то одна-->
+
                     <div class="card-rating">
                       <ul class="stars-list">
                         <li class="stars-item"></li>
@@ -205,14 +201,14 @@
                         <li class="stars-item"></li>
                         <li class="stars-item"></li>
                       </ul>
-                      <button type="span" class="card-button card-rating-text button">Рейтинг: 8,5</button>
+                      <span class="card-button card-rating-text button">Рейтинг: 8,5</span>
                     </div>
                   </div>
                 </div>
               </li>
               <li class="cards-item">
                 <div class="card">
-                  <img src="images/hotel-2.jpg" alt="Рельефные скалы на фоне тёмного неба и радуги" class="card-image">
+                  <img width="300" height="212" src="images/hotel-2.jpg" alt="Рельефные скалы на фоне тёмного неба и радуги" class="card-image">
                   <div class="card-info">
                     <div class="card-name">Villas at Poco Diablo</div>
                     <div class="card-description">
@@ -232,14 +228,14 @@
                         <li class="stars-item"></li>
                         <li class="stars-item"></li>
                       </ul>
-                      <button type="span" class="card-button card-rating-text button">Рейтинг: 9,2</button>
+                      <span class="card-button card-rating-text button">Рейтинг: 9,2</span>
                     </div>
                   </div>
                 </div>
               </li>
               <li class="cards-item">
                 <div class="card">
-                  <img src="images/hotel-3.jpg" alt="Скалы из красного песчаника, утопающие в зелени" class="card-image">
+                  <img width="300" height="212" src="images/hotel-3.jpg" alt="Скалы из красного песчаника, утопающие в зелени" class="card-image">
                   <div class="card-info">
                     <div class="card-name">Desert Quail Inn</div>
                     <div class="card-description">
@@ -256,14 +252,14 @@
                         <li class="stars-item"></li>
                         <li class="stars-item"></li>
                       </ul>
-                      <button type="span" class="card-button card-rating-text button">Рейтинг: 6,9</button>
+                      <span class="card-button card-rating-text button">Рейтинг: 6,9</span>
                     </div>
                   </div>
                 </div>
               </li>
               <li class="cards-item">
                 <div class="card">
-                  <img src="images/hotel-4.jpg" alt="Скала освещённая закатным солнцем на фоне звёздного неба" class="card-image">
+                  <img width="300" height="212" src="images/hotel-4.jpg" alt="Скала освещённая закатным солнцем на фоне звёздного неба" class="card-image">
                   <div class="card-info">
                     <div class="card-name">GreenTree Inn</div>
                     <div class="card-description">
@@ -279,7 +275,7 @@
                         <li class="stars-item"></li>
                         <li class="stars-item"></li>
                       </ul>
-                      <button type="span" class="card-button card-rating-text button">Рейтинг: 5,0</button>
+                      <span class="card-button card-rating-text button">Рейтинг: 5,0</span>
                     </div>
                   </div>
                 </div>
@@ -356,7 +352,7 @@
           <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy">
-          <img class="logo-htmlacademy-link" src="images/academy_logo.svg" alt="Логотип «htmlacademy»">
+          <img width="115" height="34" class="logo-htmlacademy-link" src="images/academy_logo.svg" alt="Логотип «htmlacademy»">
         </a>
       </div>
     </footer>
@@ -364,4 +360,3 @@
 </body>
 
 </html>
-<!-- плагин свг превьюир для свг -->
