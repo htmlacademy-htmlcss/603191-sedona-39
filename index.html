@@ -81,9 +81,7 @@
             </div>
           </div>
           <div class="advantages-col advantages-big">
-            <div class="advantages-photo">
-              <img class="advantages-image" width="800" height="385" src="images/photo-1.jpg" alt="Вид на городские домики утопающие в цветах">
-            </div>
+            <img class="advantages-image" width="800" height="385" src="images/photo-1.jpg" alt="Вид на городские домики утопающие в цветах">
           </div>
         </div>
 
@@ -115,10 +113,8 @@
 
         <div class="advantages-row">
           <div class="advantages-col advantages-big">
-            <div class="advantages-photo">
-              <img class="advantages-image" width="800" height="385" src="images/photo-2.jpg"
-                   alt="Мост дьявола – большая арка в скалах из красного песчаника над каньоном">
-            </div>
+            <img class="advantages-image" width="800" height="385" src="images/photo-2.jpg"
+                 alt="Мост дьявола – большая арка в скалах из красного песчаника над каньоном">
           </div>
           <div class="advantages-col advantages-small">
             <div class="advantages-block advantages-block-5">
@@ -174,13 +170,13 @@
     </section>
 
     <!-- Блок с подпиской на рассылку -->
-    <section class="subscribe">
+    <section class="subscribe subscribe-main">
       <div class="subscribe-content">
         <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description description">Только полезная информация и никакого спама,<br/> честное
           бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="input subscribe-input" type="text" name="e-mail" placeholder="Ваш e-mail">
+          <input class="input subscribe-input" type="text" name="e-mail" placeholder="Ваш e-mail" required>
           <button class="subscribe-button button button-blue button-big" type="submit">Подписаться</button>
         </form>
       </div>
@@ -225,7 +221,7 @@
       <div class="contacts-phone">
         <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
-      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy-link" alt="Логотип «htmlacademy»">
+      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy-link">
         <svg class="logo-htmlacademy-svg" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="inherit"/>
           <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" fill="inherit"/>
@@ -260,9 +256,10 @@
         <div class="modal-row">
           <div class="modal-field">
             <label class="modal-label">Дата заезда:</label>
-            <div class="modal-box calendar">
-              <input type="text" value="27 апреля 2020" name="date-from" id="modal-date-from" class="input modal-input">
-              <div class="modal-icon"></div>
+            <div class="modal-inner">
+              <div class="modal-box calendar">
+                <input type="text" value="27 апреля 2020" name="date-from" id="modal-date-from" class="input modal-input">
+              </div>
               <span class="modal-info modal-error">Мы не можем отправить вас в прошлое.</span>
             </div>
           </div>
@@ -271,9 +268,10 @@
         <div class="modal-row">
           <div class="modal-field">
             <label class="modal-label">Дата выезда:</label>
-            <div class="modal-box calendar">
-              <input type="text"  value="1 сентября 2023" name="date-to" id="modal-date-to" class="input modal-input">
-              <div class="modal-icon"></div>
+            <div class="modal-inner">
+              <div class="modal-box calendar">
+                <input type="text"  value="1 сентября 2023" name="date-to" id="modal-date-to" class="input modal-input">
+              </div>
               <span class="modal-info">На эти даты есть свободные номера. Пока есть.</span>
             </div>
           </div>
