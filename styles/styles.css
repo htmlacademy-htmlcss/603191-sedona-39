@@ -58,6 +58,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .button:hover {
@@ -145,6 +146,7 @@ body {
 .input {
   color: #000000;
   border: 3px solid transparent;
+  font-family: inherit;
 }
 
 .input::placeholder {
@@ -274,6 +276,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .navigation-list {
@@ -281,6 +284,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -292,7 +296,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  padding: 20px 0;
   margin: 0 16px;
   position: relative;
 }
@@ -390,8 +394,10 @@ body {
   background-image: url('../images/index-background.jpg');
   background-size: cover;
   background-position: center center;
+  background-color: #dbe9f2;
   background-repeat: no-repeat;
   padding-top: 51px;
+  padding-bottom: 82px;
   position: relative;
 }
 
@@ -400,6 +406,7 @@ body {
   content: "";
   height: 57px;
   width: 100%;
+  position: absolute;
   left: 0;
   bottom: 0;
   background-image: url('../images/welcome-decor.svg');
@@ -426,17 +433,17 @@ body {
 
 .info-advantages {
   display: block;
-  padding: 69px 0;
+  padding: 69px 0 90px 0;
 }
 
 .info-services {
   display: block;
-  padding: 64px 0;
+  padding: 62px 0 45px 0;
 }
 
 .info-search {
   display: block;
-  padding: 96px 0;
+  padding: 91px 0;
 }
 
 .info-content {
@@ -479,6 +486,7 @@ body {
 .advantages-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .advantages-col {
@@ -538,12 +546,11 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.advantages-photo {
-  display: block;
-}
+
 
 .advantages-image {
   display: block;
+  background-color: #dfdfdf;
 }
 
 .advantages-title {
@@ -587,7 +594,9 @@ body {
 .services-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .services-item {
@@ -677,9 +686,16 @@ body {
   padding-bottom: 102px;
 }
 
+.subscribe-main {
+  background-color: #90acba;
+  padding-top: 96px;
+  padding-bottom: 105px;
+}
+
 .subscribe-catalog {
   background: white;
   color: #000000;
+  padding-top: 80px;
 }
 
 .subscribe-catalog .subscribe-description {
@@ -716,6 +732,7 @@ body {
   display: block;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  font-weight: bold;
 }
 
 .subscribe-form {
@@ -727,7 +744,7 @@ body {
 
 .subscribe-input {
   width: 452px;
-  height: 52px;
+  min-height: 52px;
   padding-left: 20px;
   font-size: 18px;
   border: none;
@@ -739,8 +756,8 @@ body {
 .page-footer {
   display: block;
   margin-top: auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 35px;
   color: #000000;
 }
 
@@ -886,6 +903,10 @@ body {
   display: block;
 }
 
+.catalog-form {
+  background-color: #5f89b1;
+}
+
 .breadcrumbs {
   display: flex;
   flex-direction: row;
@@ -956,7 +977,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   padding-top: 35px;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
 }
 
 .form-content {
@@ -969,8 +990,8 @@ body {
 
 .form-title {
   display: block;
-  margin-bottom: 8px;
   margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 130%;
@@ -999,7 +1020,7 @@ body {
 }
 
 .form-type {
-  margin-right: 140px;
+  margin-right: 150px;
 }
 
 .form-cost {
@@ -1152,6 +1173,7 @@ body {
   font-size: 18px;
   line-height: 133%;
   padding-right: 40px;
+  appearance: textfield;
 }
 
 .form-price-input-from {
@@ -1178,7 +1200,7 @@ body {
 
 .form-price-range {
   display: block;
-  margin-top: 48px;
+  margin-top: 45px;
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -1258,6 +1280,13 @@ body {
   margin-bottom: 40px;
 }
 
+.result-header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .result-title {
   display: block;
   font-weight: 700;
@@ -1275,9 +1304,9 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
-  width: 292px;
+  min-width: 292px;
   border-radius: 4px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   border: 2px solid #e5e5e5;
   color: #333333;
   cursor: pointer;
@@ -1287,11 +1316,13 @@ body {
   position: relative;
   margin-right: 62px;
   transition: 0.3s;
+  background-color: #fff;
 
   background-image: url('../images/arrow-down.svg');
   background-size: auto;
   background-repeat: no-repeat;
   background-position: calc(100% - 18px) 20px;
+  font-family: inherit;
 }
 
 
@@ -1352,7 +1383,7 @@ body {
 .cards {
   display: block;
   padding-bottom: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   border-bottom: 1px solid #E6E6E6;
 }
 
@@ -1638,6 +1669,9 @@ body {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  right: -18px;
 }
 
 .modal-close:hover {
@@ -1662,14 +1696,20 @@ body {
 
 .modal-row {
   display: block;
-  margin-bottom: 48px;
+  margin-bottom: 23px;
 }
 
 .modal-field {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.modal-inner {
+  position: relative;
+  flex-grow: 1;
+  min-width: 50%;
 }
 
 .modal-label {
@@ -1678,17 +1718,18 @@ body {
   justify-content: flex-start;
   align-items: center;
   min-width: 137px;
+  padding-top: 12px;
   padding-right: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
   text-transform: capitalize;
   position: relative;
+  flex-shrink: 1;
 }
 
 .modal-box {
   display: block;
-  flex-grow: 1;
   position: relative;
 }
 
@@ -1729,18 +1770,13 @@ body {
   text-align: center;
 }
 
-.modal-icon {
-  display: block;
-}
-
 .modal-info {
   display: block;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 131%;
-  position: absolute;
-  left: 20px;
-  bottom: -25px;
+  padding-left: 20px;
   color: #333333;
 }
 
@@ -1808,6 +1844,9 @@ body {
 
 .modal-submit {
   width: 100%;
+  margin-top: 25px;
+  padding-top: 13px;
+  padding-bottom: 12px;
 }
 
 .modal-help {
@@ -1873,6 +1912,8 @@ body {
 
 .logo-htmlacademy-link {
   vertical-align: top;
+  position: relative;
+  top: 4px;
 }
 
 .logo-htmlacademy-link:focus,

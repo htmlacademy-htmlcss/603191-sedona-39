@@ -55,7 +55,7 @@
 
   <main class="main-catalog">
 
-    <section class="form">
+    <section class="catalog-form form">
       <div class="form-content container">
         <header class="form-header">
           <h1 class="form-title">Гостиницы Седоны</h1>
@@ -80,9 +80,9 @@
                        id="checkbox-pool"/>
                 <label class="form-label" for="checkbox-pool">
 
-                  <div class="form-toggler">
+                  <span class="form-toggler">
                     <i class="form-custom-checkbox"></i>
-                  </div>
+                  </span>
                   <span class="form-text">Бассейн</span>
                 </label>
               </li>
@@ -90,9 +90,9 @@
                 <input type="checkbox" name="parking" class="visually-hidden form-checkbox"
                        id="checkbox-parking"/>
                 <label class="form-label" for="checkbox-parking">
-                  <div class="form-toggler">
+                  <span class="form-toggler">
                     <i class="form-custom-checkbox"></i>
-                  </div>
+                  </span>
                   <span class="form-text">Парковка</span>
                 </label>
               </li>
@@ -100,9 +100,9 @@
                 <input type="checkbox" name="wi-fi" class="visually-hidden form-checkbox"
                        id="checkbox-wi-fi"/>
                 <label class="form-label" for="checkbox-wi-fi">
-                  <div class="form-toggler">
+                  <span class="form-toggler">
                     <i class="form-custom-checkbox"></i>
-                  </div>
+                  </span>
                   <span class="form-text">Wi-Fi</span>
                 </label>
               </li>
@@ -116,28 +116,28 @@
               <li class="form-item">
                 <input type="radio" name="type-of-hotel" value="hotel" id="hotel" class="visually-hidden form-radio"/>
                 <label class="form-label" for="hotel">
-                  <div class="form-toggler">
+                  <span class="form-toggler">
                     <i class="form-custom-radio"></i>
-                  </div>
+                  </span>
                   <span class="form-text">Гостиница</span>
                 </label>
               </li>
               <li class="form-item">
                 <input type="radio" name="type-of-hotel" value="motel" id="motel" class="visually-hidden form-radio"/>
                 <label class="form-label" for="motel">
-                  <div class="form-toggler">
+                  <span class="form-toggler">
                     <i class="form-custom-radio"></i>
-                  </div>
+                  </span>
                   <span class="form-text">Мотель</span>
-                </label>
+                </label>v
               </li>
               <li class="form-item">
                 <input type="radio" name="type-of-hotel" value="apartment" id="apartment"
                        class="visually-hidden form-radio"/>
                 <label class="form-label" for="apartment">
-                  <div class="form-toggler">
+                  <span class="form-toggler">
                     <i class="form-custom-radio"></i>
-                  </div>
+                  </span>
                   <span class="form-text">Апартаменты</span>
                 </label>
               </li>
@@ -159,7 +159,7 @@
               </div>
 
               <div class="form-price-range">
-                <div class="form-price-inner" style="width: 70%">
+                <div class="form-price-inner" style="width: 80%">
                   <button type="button" class="form-price-toggler form-price-toggler-from"></button>
                   <button type="button" class="form-price-toggler form-price-toggler-to"></button>
                 </div>
@@ -184,17 +184,22 @@
           <h2 class="visually-hidden">Результат поиска</h2>
           <b class="result-title">Найдено гостиниц: 38</b>
 
-          <select name="select" class="result-select">
-            <option value="cheap" selected>Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <div class="result-togglers">
-            <button type="button" class="result-toggler result-toggler-network result-toggler-active">
-            </button>
-            <button class="result-toggler result-toggler-cards">
-            </button>
-            <button class="result-toggler result-toggler-list">
-            </button>
+          <div class="result-header-buttons">
+            <select name="select" class="result-select">
+              <option value="cheap" selected>Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <div class="result-togglers">
+              <button type="button" class="result-toggler result-toggler-network result-toggler-active">
+                <span class="visually-hidden">Вывести результат поиска сеткой</span>
+              </button>
+              <button type="button" class="result-toggler result-toggler-cards">
+                <span class="visually-hidden">Вывести результат поиска сеткой</span>
+              </button>
+              <button type="button" class="result-toggler result-toggler-list">
+                <span class="visually-hidden">Вывести результат поиска списком</span>
+              </button>
+            </div>
           </div>
         </header>
         <div class="cards">
@@ -337,7 +342,7 @@
         <p class="subscribe-description description">Только полезная информация и никакого спама,<br/> честное
           бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="input subscribe-input" type="text" name="e-mail" placeholder="Ваш e-mail"/>
+          <input class="input subscribe-input" type="text" name="e-mail" placeholder="Ваш e-mail" required/>
           <button class="subscribe-button button button-blue button-big" type="submit">Подписаться</button>
         </form>
       </div>
@@ -392,7 +397,7 @@
       <div class="contacts-phone">
         <a class="contacts-phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
-      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy-link" alt="Логотип «htmlacademy»">
+      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy-link">
         <svg class="logo-htmlacademy-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="inherit"/>
